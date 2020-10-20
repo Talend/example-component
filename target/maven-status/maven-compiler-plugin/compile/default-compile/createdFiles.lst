@@ -1,0 +1,9 @@
+com/examplepostgres/talend/components/service/ExampleComponentService.class
+com/examplepostgres/talend/components/source/ExamplePostgresMapper.class
+com/examplepostgres/talend/components/output/ExamplePostgresOutput.class
+com/examplepostgres/talend/components/datastore/ExamplePostgres.class
+com/examplepostgres/talend/components/dataset/CustomDataset.class
+com/examplepostgres/talend/components/source/ExamplePostgresMapperConfiguration.class
+com/examplepostgres/talend/components/output/ExamplePostgresOutputConfiguration.class
+com/examplepostgres/talend/components/source/ExamplePostgresSource.class
+com/examplepostgres/talend/components/package-info.class

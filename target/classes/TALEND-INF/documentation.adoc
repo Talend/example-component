@@ -1,0 +1,56 @@
+//component_start:ExamplePostgresInput
+
+== ExamplePostgresInput
+
+TODO fill the documentation for this mapper
+
+//configuration_start
+
+=== Configuration
+
+[cols="d,d,m,a,e,d",options="header"]
+|===
+|Display Name|Description|Default Value|Enabled If|Configuration Path|Configuration Type
+|configuration|TODO fill the documentation for this configuration|-|Always enabled|configuration|-
+|dataset|TODO fill the documentation for this parameter|-|Always enabled|configuration.dataset|dataset
+|datastore|TODO fill the documentation for this parameter|-|Always enabled|configuration.dataset.datastore|datastore
+|database|Database on Postgres server|-|Always enabled|configuration.dataset.datastore.database|datastore
+|password|TODO fill the documentation for this parameter|-|Always enabled|configuration.dataset.datastore.password|datastore
+|port|TODO fill the documentation for this parameter|0|Always enabled|configuration.dataset.datastore.port|datastore
+|url|TODO fill the documentation for this parameter|-|Always enabled|configuration.dataset.datastore.url|datastore
+|username|TODO fill the documentation for this parameter|-|Always enabled|configuration.dataset.datastore.username|datastore
+|table|TODO fill the documentation for this parameter|-|Always enabled|configuration.dataset.table|dataset
+|===
+
+//configuration_end
+
+//component_end:ExamplePostgresInput
+
+//component_start:ExamplePostgresOutput
+
+== ExamplePostgresOutput
+
+TODO fill the documentation for this processor
+
+//configuration_start
+
+=== Configuration
+
+[cols="d,d,m,a,e,d",options="header"]
+|===
+|Display Name|Description|Default Value|Enabled If|Configuration Path|Configuration Type
+|configuration|TODO fill the documentation for this configuration|-|Always enabled|configuration|-
+|dataset|TODO fill the documentation for this parameter|-|Always enabled|configuration.dataset|dataset
+|datastore|TODO fill the documentation for this parameter|-|Always enabled|configuration.dataset.datastore|datastore
+|database|Database on Postgres server|-|Always enabled|configuration.dataset.datastore.database|datastore
+|password|TODO fill the documentation for this parameter|-|Always enabled|configuration.dataset.datastore.password|datastore
+|port|TODO fill the documentation for this parameter|0|Always enabled|configuration.dataset.datastore.port|datastore
+|url|TODO fill the documentation for this parameter|-|Always enabled|configuration.dataset.datastore.url|datastore
+|username|TODO fill the documentation for this parameter|-|Always enabled|configuration.dataset.datastore.username|datastore
+|table|TODO fill the documentation for this parameter|-|Always enabled|configuration.dataset.table|dataset
+|===
+
+//configuration_end
+
+//component_end:ExamplePostgresOutput
+

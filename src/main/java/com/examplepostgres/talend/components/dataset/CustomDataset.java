@@ -5,6 +5,7 @@ import java.io.Serializable;
 import com.examplepostgres.talend.components.datastore.ExamplePostgres;
 
 import org.talend.sdk.component.api.configuration.Option;
+import org.talend.sdk.component.api.configuration.action.Suggestable;
 import org.talend.sdk.component.api.configuration.type.DataSet;
 import org.talend.sdk.component.api.configuration.ui.layout.GridLayout;
 import org.talend.sdk.component.api.meta.Documentation;
@@ -23,6 +24,7 @@ public class CustomDataset implements Serializable {
     private ExamplePostgres datastore;
 
     @Option
+    @Suggestable(value="showTables", parameters = {"datastore"})
     @Documentation("TODO fill the documentation for this parameter")
     private String table;
 

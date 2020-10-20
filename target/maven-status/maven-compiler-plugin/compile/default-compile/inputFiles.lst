@@ -1,0 +1,9 @@
+/Users/tbennett/VSCode/example-component/src/main/java/com/examplepostgres/talend/components/package-info.java
+/Users/tbennett/VSCode/example-component/src/main/java/com/examplepostgres/talend/components/datastore/ExamplePostgres.java
+/Users/tbennett/VSCode/example-component/src/main/java/com/examplepostgres/talend/components/service/ExampleComponentService.java
+/Users/tbennett/VSCode/example-component/src/main/java/com/examplepostgres/talend/components/dataset/CustomDataset.java
+/Users/tbennett/VSCode/example-component/src/main/java/com/examplepostgres/talend/components/source/ExamplePostgresSource.java
+/Users/tbennett/VSCode/example-component/src/main/java/com/examplepostgres/talend/components/source/ExamplePostgresMapper.java
+/Users/tbennett/VSCode/example-component/src/main/java/com/examplepostgres/talend/components/output/ExamplePostgresOutputConfiguration.java
+/Users/tbennett/VSCode/example-component/src/main/java/com/examplepostgres/talend/components/output/ExamplePostgresOutput.java
+/Users/tbennett/VSCode/example-component/src/main/java/com/examplepostgres/talend/components/source/ExamplePostgresMapperConfiguration.java
