@@ -3,6 +3,8 @@ package com.examplepostgres.talend.components.output;
 import static org.talend.sdk.component.api.component.Icon.IconType.CUSTOM;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
@@ -27,7 +29,7 @@ import com.examplepostgres.talend.components.service.ExampleComponentService;
 public class ExamplePostgresOutput implements Serializable {
     private final ExamplePostgresOutputConfiguration configuration;
     private final ExampleComponentService service;
-
+    private List<Record> records = null;
     public ExamplePostgresOutput(@Option("configuration") final ExamplePostgresOutputConfiguration configuration,
                           final ExampleComponentService service) {
         this.configuration = configuration;
@@ -39,6 +41,7 @@ public class ExamplePostgresOutput implements Serializable {
         // this method will be executed once for the whole component execution,
         // this is where you can establish a connection for instance
         // Note: if you don't need it you can delete it
+        records = new ArrayList<Record>();
     }
 
     @BeforeGroup
@@ -46,6 +49,7 @@ public class ExamplePostgresOutput implements Serializable {
         // if the environment supports chunking this method is called at the beginning if a chunk
         // it can be used to start a local transaction specific to the backend you use
         // Note: if you don't need it you can delete it
+        records.clear();
     }
 
     @ElementListener
@@ -54,12 +58,14 @@ public class ExamplePostgresOutput implements Serializable {
         // this is the method allowing you to handle the input(s) and emit the output(s)
         // after some custom logic you put here, to send a value to next element you can use an
         // output parameter and call emit(value).
+        records.add(defaultInput);
     }
 
     @AfterGroup
     public void afterGroup() {
         // symmetric method of the beforeGroup() executed after the chunk processing
         // Note: if you don't need it you can delete it
+        this.configuration.getDataset().insertRecords(records);
     }
 
     @PreDestroy
@@ -67,5 +73,6 @@ public class ExamplePostgresOutput implements Serializable {
         // this is the symmetric method of the init() one,
         // release potential connections you created or data you cached
         // Note: if you don't need it you can delete it
+        if (!records.isEmpty()) this.configuration.getDataset().insertRecords(records);
     }
 }

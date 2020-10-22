@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.examplepostgres.talend.components.output.ExamplePostgresOutputTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.165 s - in com.examplepostgres.talend.components.output.ExamplePostgresOutputTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.113 s - in com.examplepostgres.talend.components.output.ExamplePostgresOutputTest
